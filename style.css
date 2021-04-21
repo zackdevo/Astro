@@ -1,0 +1,218 @@
+html {
+  scroll-behavior: smooth;
+}
+
+ 
+.noScroll {
+    overflow: hidden;
+}
+#wow {
+  background: 50% 100% / 50% 50% no-repeat
+              radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 10vw;
+  font-family: "Source Sans Pro", sans-serif;
+  animation: glow 1500ms linear infinite 2000ms;
+  display: none;
+}
+
+#wowp {
+  display: none;
+
+}
+
+#wowp p {
+  color : white;
+  font-size: 1.5rem;
+}
+.fond {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+}
+.cool {
+  background-color: rgb(83, 212, 212);
+  font-size: 1.5rem ;
+  color: rgb(4, 48, 44);
+  padding : 20px;
+  border-radius: 10px;
+  display: none;
+  transition: 300ms;
+}
+.glow2 {
+  animation : glow2 1.5s ease-in-out infinite;
+}
+@keyframes glow2 {
+  20% {
+    box-shadow: 0px 0px 0px 0px rgba(40, 222, 247, 0.67);
+-webkit-box-shadow: 0px 0px 0px 0px rgba(40, 222, 247, 0.67);
+-moz-box-shadow: 0px 0px 0px 0px rgba(40, 222, 247, 0.67);
+  }
+  60% {
+    box-shadow: -1px 0px 20px 10px rgba(40, 222, 247, 0.67);
+-webkit-box-shadow: -1px 0px 20px 10px rgba(40, 222, 247, 0.67);
+-moz-box-shadow: -1px 0px 20px 10px rgba(40, 222, 247, 0.67);
+  }
+}
+  
+  @keyframes glow {
+    10% {
+      text-shadow: 0 0 8px #fff;
+    }
+  }
+
+.iScrollIndicator{
+    display: none!important;
+}
+
+.bg {
+    background: url("img/starSky.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
+div#scene {
+    display: flex;
+    justify-content: center;
+}
+
+div#scene img {
+    filter: drop-shadow(30px 10px 4px #000000);
+}
+
+
+/* SPACE BUTTON BABY */
+
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    z-index: 1;
+  }
+  
+  .button {
+    min-width: 300px;
+    min-height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #22686f;
+    background: rgb(221, 252, 252);
+  background: linear-gradient(90deg, rgba(129,245,217,1) 0%,rgb(191, 231, 231) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+  .wrap button::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid rgba(173, 251, 251,0.8);
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .button:hover, .button:focus {
+    color: #245458;
+    transform: translateY(-6px);
+  }
+  
+  .wrap button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  .wrap button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #DDFCFC;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1s infinite;
+  }
+  
+  .wrap button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+
+  #scene {
+      transition: 3000ms;
+  }
+
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+.waw {
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+
+.pos-center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-form {
+    background: linear-gradient(90deg, rgba(129,245,217,0.8) 0%,rgba(90, 107, 107, 0.8) 100%);
+    border-radius: 10%;
+    padding: 20px;
+}
+
+.astro-btn {
+    background:  linear-gradient(90deg, rgba(129,245,217,1) 0%,rgb(191, 231, 231) 100%);
+    border-radius: 50%;
+    border: solid 2px rgba(23, 72, 73, 0.7);
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight, .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid rgb(56, 99, 89)!important;
+    background: rgba(129,245,217,1)!important;
+    color: #1c4748!important;
+}
+.ui-widget-header, table.ui-datepicker-calendar, .ui-widget-content {
+    background: linear-gradient(90deg, rgba(129,245,217,0.9) 0%,rgba(191, 231, 231,0.95) 100%)!important;
+}
