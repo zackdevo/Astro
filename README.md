@@ -5,9 +5,9 @@ Ce mini-projet a été réalisé en jQuery et PHP, découvrez votre signe astrol
 
 Plusieurs librairies ont étés utilisées lors de sa réalisation : 
 
-AOS - Animate on scroll : https://michalsnik.github.io/aos/
-FullPage Js : https://alvarotrigo.com/fullPage/
-Parallax Js : https://matthew.wagerfield.com/parallax/
+AOS - Animate on scroll : https://michalsnik.github.io/aos/ <br>
+FullPage Js : https://alvarotrigo.com/fullPage/ <br>
+Parallax Js : https://matthew.wagerfield.com/parallax/ <br>
 jQuery Ui : https://jqueryui.com/
 
 Amusez-vous bien avec la meilleure page de signe astro du siècle !
