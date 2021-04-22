@@ -1,6 +1,8 @@
 # Astro
 Mini-projet en jQuery pour découvrir votre signe astrologique ! 
 
+https://zaach.studiostudio.fr/astro/
+
 Ce mini-projet a été réalisé en jQuery et PHP, découvrez votre signe astrologique avec Astro !
 
 Plusieurs librairies ont étés utilisées lors de sa réalisation : 
